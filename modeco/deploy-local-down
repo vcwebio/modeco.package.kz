@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+
+prefix="package_$2"
+
+
+executionplane --silent docker container prune --force
+
+if [[ "package_kz_kafka_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume rm --force package_kz_kafka_volume
+	fi
+	
+if [[ "package_kz_zookeeper_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume rm --force package_kz_zookeeper_volume
+	fi
+	
