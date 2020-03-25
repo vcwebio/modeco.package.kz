@@ -13,7 +13,7 @@ COPY ./ /conteco/repo/
 
 ##### BEGIN modeco/Dockerfile/env-labels-footer #####
 ENV CONTECO_REALM="vcwebio" \
-    CONTECO_ECOSYSTEM="conteco" \
+    CONTECO_ECOSYSTEM="modeco" \
     CONTECO_TYPE="package" \
     CONTECO_NAME="kz" \
     CONTECO_TAG="v1.0.0" \
@@ -21,7 +21,7 @@ ENV CONTECO_REALM="vcwebio" \
     CONTECO_BUILD="modeco"
 LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.realm="vcwebio" \
-      io.vcweb.ecosystem="conteco" \
+      io.vcweb.ecosystem="modeco" \
       io.vcweb.type="package" \
       io.vcweb.name="kz" \
       io.vcweb.tag="v1.0.0" \
@@ -29,5 +29,5 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.build="modeco" \
       io.vcweb.label="package.kz - ModEco" \
       io.vcweb.description="Modeco kafka module package." \
-      io.vcweb.docker.cmd.help="docker run vcwebio/conteco.package.kz --help"
+      io.vcweb.docker.cmd.help="docker run vcwebio/modeco.package.kz --help"
 ##### END modeco/Dockerfile/env-labels-footer #####
