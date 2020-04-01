@@ -3,11 +3,23 @@
 
 prefix="package_$2"
 
-if [[ "package_kz_kafka_volume" == "$prefix"* ]] ; then
-	executionplane --silent docker volume create package_kz_kafka_volume
+if [[ "package_kz_kafka_secrets_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create package_kz_kafka_secrets_volume
 	fi
 	
-if [[ "package_kz_zookeeper_volume" == "$prefix"* ]] ; then
-	executionplane --silent docker volume create package_kz_zookeeper_volume
+if [[ "package_kz_kafka_data_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create package_kz_kafka_data_volume
+	fi
+	
+if [[ "package_kz_zookeeper_secrets_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create package_kz_zookeeper_secrets_volume
+	fi
+	
+if [[ "package_kz_zookeeper_data_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create package_kz_zookeeper_data_volume
+	fi
+	
+if [[ "package_kz_zookeeper_log_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create package_kz_zookeeper_log_volume
 	fi
 	

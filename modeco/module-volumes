@@ -1,3 +1,6 @@
-package_kz_kafka_volume
-package_kz_zookeeper_volume
+package_kz_kafka_secrets_volume
+package_kz_kafka_data_volume
+package_kz_zookeeper_secrets_volume
+package_kz_zookeeper_data_volume
+package_kz_zookeeper_log_volume
 
